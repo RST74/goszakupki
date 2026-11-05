@@ -20,10 +20,12 @@
 
 ## Установка (Windows)
 
+Нужен **Python 3.11+** (рекомендуется 3.12). Проверить: `py -0p`.
+
 ```powershell
 git clone https://github.com/RST74/goszakupki.git
 cd goszakupki
-python -m venv venv
+py -3.12 -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 copy .env.example .env

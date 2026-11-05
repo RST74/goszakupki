@@ -1,23 +1,23 @@
-# Только прямые зависимости; остальные pip подтянет сам.
-# Версии — из рабочего окружения на ПК (pip freeze от 05.11.2026).
+# Direct dependencies only (pip resolves the rest). Requires Python 3.11+.
+# ASCII only: old pip on Windows reads this file in cp1252.
 
-# Сбор данных (М1)
+# Scraping (M1)
 requests==2.34.2
 beautifulsoup4==4.15.0
 lxml==6.1.3
 pydantic==2.14.3
 tenacity==9.2.1
 
-# База данных (М2)
+# Database (M2)
 supabase==2.34.0
 
-# Отчёты (М4)
+# Reports (M4)
 pandas==3.1.1
 openpyxl==3.1.5
 
-# Конфигурация и логи (М0)
+# Config and logging (M0)
 python-dotenv==1.2.4
 loguru==0.7.3
 
-# Тесты (М8)
+# Tests (M8)
 pytest==9.2.0
