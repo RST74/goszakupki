@@ -1,4 +1,6 @@
 """Разовая проверка окружения: Telegram-бот + Supabase. Запуск: python check_setup.py"""
+import sys
+
 import requests
 from supabase import create_client
 import config
@@ -59,3 +61,4 @@ if __name__ == "__main__":
         logger.success("Всё настроено ✅")
     else:
         logger.warning(f"Telegram={ok_tg}, Supabase={ok_sb}")
+        sys.exit(1)  # ненулевой код — чтобы ошибку было видно в скриптах и Планировщике
