@@ -1,10 +1,21 @@
+# Окружение и секреты
 venv/
+.venv/
 .env
+
+# Python
 __pycache__/
 *.pyc
+.pytest_cache/
+
+# Рабочие файлы
 logs/
 reports/
-samples/
 *.xlsx
+~$*.xlsx
+
+# IDE
 .vscode/
 .idea/
+
+# samples/ НЕ игнорируем: образцы страниц сайта нужны для тестов парсера
